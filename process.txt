@@ -1,6 +1,14 @@
-Products
+Products:-
 Get Products
 Add Products
 Get one Product
 Rate Product
 Filter Product
+Add items to Cart
+Get items of Cart
+Remove items from Cart
+
+
+UserController:-
+Signup - Email, Name, Password, TypeOfCustomer
+Signin - Email, Password
