@@ -1,3 +1,6 @@
+
+// Basic Auth is not  required as we are using jwtAuth
+
 import UserModel from "../features/user/user.model.js";
 
 const basicAuth = (req,res,next) => {

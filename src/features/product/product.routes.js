@@ -13,11 +13,13 @@ const productController = new ProductController();
 // All the paths to controller methods
 productRouter.get('/', productController.getAllProducts);
 productRouter.post('/', upload.single('imageUrl'),productController.addProduct);
-productRouter.get("/:id",productController.getOneProduct);
+
+// cant use interference with filter
+// productRouter.get("/:id",productController.getOneProduct);
 
 
 // Query parameters
-// localhost:3200/api/products/filter?minPrice=10&maxPrice=20&caterory=Category1
+// localhost:3200/api/products/filter?minPrice=10&maxPrice=20&category=Category1
 productRouter.get('/filter', productController.filterProducts);
 
 

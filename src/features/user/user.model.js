@@ -28,7 +28,7 @@ let users = [
     {
         id:1,
         name:"Seller",
-        email:"seller@gamil.com",
+        email:"seller@gmail.com",
         password:"password",
         type:"seller"
     },
