@@ -3,6 +3,7 @@ import express from 'express';
 import productRouter from './src/features/product/product.routes.js';
 import userRouter from './src/features/user/user.routes.js';
 import jwtAuth from './src/middlewares/jwt.middleware.js';
+import cartRouter from './src/features/cart/cart.routes.js';
 // import basicAuth from './src/middlewares/basicAuth.middleware.js';
 // import bodyParser from 'body-parser';
 
@@ -20,6 +21,9 @@ server.use("/api/products",jwtAuth, productRouter);
 
 // For all requests related to user, redirect to user routes
 server.use("/api/users", userRouter);
+
+// For all requests related to cart, redirect to cart routes
+server.use("/api/cartItems",jwtAuth, cartRouter);
 
 // Default request handler
 server.get('/', (req,res)=>{
