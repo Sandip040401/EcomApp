@@ -17,13 +17,14 @@ productRouter.post('/', upload.single('imageUrl'),productController.addProduct);
 productRouter.post('/rate',productController.rateProduct);
 
 
-// cant use interference with filter
-// productRouter.get("/:id",productController.getOneProduct);
 
 
 // Query parameters
 // localhost:3200/api/products/filter?minPrice=10&maxPrice=20&category=Category1
 productRouter.get('/filter', productController.filterProducts);
+
+
+productRouter.get("/:id",productController.getOneProduct);
 
 
 // export router

@@ -7,17 +7,18 @@ export default class ProductController{
         res.status(200).send(product);
     }
 
-    addProduct(req,res){
-       const { name, price, sizes } = req.body;
-       const newProduct = {
-        name,
-        price:parseFloat(price),
-        sizes:sizes.split(','),
-        imageUrl: req.file.filename,
-       };
-       const createdRecord = ProductModel.add(newProduct);
-       res.status(201).send(createdRecord);
-    }
+    addProduct(req, res){
+        const { name, price, sizes } = req.body;
+        const newProduct = {
+         name,
+         price: parseFloat(price),
+         sizes: sizes ? sizes.split(',') : [], // Check if sizes is defined before splitting
+         imageUrl: req.file.filename,
+        };
+        const createdRecord = ProductModel.add(newProduct);
+        res.status(201).send(createdRecord);
+     }
+     
 
     rateProduct(req, res) {
         console.log(req.query);
@@ -25,12 +26,12 @@ export default class ProductController{
         const productId = req.query.productId;
         const rating = parseFloat(req.query.rating); // Ensure rating is converted to a number
     
-        const error = ProductModel.rateProduct(userId, productId, rating);
-        if (error) {
-            return res.status(400).send(error);
-        } else {
-            return res.status(200).send('Rating has been added');
+        try{
+           ProductModel.rateProduct(userId, productId, rating);
+        } catch(err){
+            return res.status(400).send(err.message);
         }
+        return res.status(200).send('Rating has been added');
     }
 
     getOneProduct(req,res){

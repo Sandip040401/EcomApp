@@ -40,17 +40,20 @@ export default class ProductModel{
 
     static rateProduct(userID, productID, rating) {
         // 1. Validate user and product
-        const user = UserModel.getAll().find((u) => u.id == userID);
+        const user = UserModel.getAll().find(
+            (u) => u.id == userID
+            );
         if (!user) {
-            return "User not found";
+            throw new Error('User not found');
         }
     
         // Validate Product
-        const product = products.find((p) => p.id == productID);
+        const product = products.find(
+            (p) => p.id == productID
+            );
         if (!product) {
-            return "Product not found";
+            throw new Error('Product not found');
         }
-    
         // 2. Check if there are any ratings and if not then add ratings array.
         if (!product.ratings) {
             product.ratings = [];
