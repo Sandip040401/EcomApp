@@ -33,3 +33,14 @@
 {"level":"info","message":"/api/products/ra?product=1 - {}","service":"request-logging"}
 {"level":"info","message":"/api/products/rate?product=1 - {}","service":"request-logging"}
 {"level":"info","message":"/api/products/rate?productId=10&userId=1&rating=5 - {}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?productId=1&userId=11&rating=5 - {}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?productId=1&userId=11&rating=5 - {}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?productId=10&userId=1&rating=5 - {}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}

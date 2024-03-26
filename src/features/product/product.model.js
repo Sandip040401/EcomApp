@@ -1,5 +1,5 @@
 import UserModel from "../user/user.model.js";
-
+import { ApplicationError } from "../../error-handler/applicationError.js";
 export default class ProductModel{
 
     constructor(id, name, desc, price, imageUrl, category, sizes){
@@ -44,7 +44,7 @@ export default class ProductModel{
             (u) => u.id == userID
             );
         if (!user) {
-            throw new Error('User not found');
+            throw new ApplicationError('User not found',404);
         }
     
         // Validate Product
@@ -52,7 +52,7 @@ export default class ProductModel{
             (p) => p.id == productID
             );
         if (!product) {
-            throw new Error('Product not found');
+            throw new ApplicationError('Product not found',400);
         }
         // 2. Check if there are any ratings and if not then add ratings array.
         if (!product.ratings) {

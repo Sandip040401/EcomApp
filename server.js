@@ -8,6 +8,8 @@ import userRouter from './src/features/user/user.routes.js';
 import jwtAuth from './src/middlewares/jwt.middleware.js';
 import cartRouter from './src/features/cart/cart.routes.js';
 import loggerMiddleware from './src/middlewares/logger.middleware.js';
+import { ApplicationError } from './src/error-handler/applicationError.js';
+import { connectToMongoDB } from './src/config/mongodb.js';
 // import basicAuth from './src/middlewares/basicAuth.middleware.js';
 // import bodyParser from 'body-parser';
 
@@ -61,8 +63,17 @@ server.get('/', (req,res)=>{
 // Error handler middleware
 
 server.use((err,req,res,next)=>{
+    
+    //for application error
+    if(err instanceof ApplicationError){
+        res.status(err.code).send(err.message);
+    }
+
     // log error to the logger file
-    res.status(503).send("Something went wrong please try later")
+
+    //for server errors
+    res.status(500).send("Something went wrong please try later")
+
 })
 
 
@@ -75,4 +86,5 @@ server.use((req,res)=>{
 // Specify Port
 server.listen(3200, ()=>{
     console.log("Server is running at 3200");
+    connectToMongoDB();
 });
