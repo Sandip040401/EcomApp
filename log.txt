@@ -44,3 +44,9 @@
 {"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
 {"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
 {"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip2\",\"email\":\"iemsand@gmail.com\",\"password\":\"hello\",\"type\":\"customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"sandip\",\"email\":\"iemsandip@gmail.com\",\"password\":\"hello\",\"type\":\"owner\"}","service":"request-logging"}
