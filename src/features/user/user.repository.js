@@ -4,6 +4,10 @@ import { ApplicationError } from "../../error-handler/applicationError.js";
 
 class UserRepository{
 
+    constructor(){
+        this.collection = "users"
+    }
+
     async signUp(newUser){
 
         try{
@@ -11,7 +15,7 @@ class UserRepository{
         const db = getDB();
 
         // Get the collection
-        const collection = db.collection('users');
+        const collection = db.collection(this.collection);
 
         // Insert the document
         await collection.insertOne(newUser);
