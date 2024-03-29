@@ -33,8 +33,8 @@ export default class ProductController{
 
     async rateProduct(req, res) {
         const userId = req.userID;
-        const productId = req.query.productId;
-        const rating = parseFloat(req.query.rating); // Ensure rating is converted to a number
+        const productId = req.body.productId;
+        const rating = parseFloat(req.body.rating); // Ensure rating is converted to a number
     
         try{
           await this.productRepository.rate(userId, productId, rating);

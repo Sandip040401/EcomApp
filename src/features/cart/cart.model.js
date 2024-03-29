@@ -9,18 +9,6 @@ export default class CartItemModel {
         this.id = id;
     }
 
-    static add(productId, userId, quantity) {
-
-        const cartItem = new CartItemModel(
-            cartItems.length + 1,
-            productId,
-            userId,
-            quantity
-        );
-        cartItems.push(cartItem);
-        console.log(cartItem);
-        return cartItem;
-    }
 
     static get(userId){
         return cartItems.filter(
@@ -40,7 +28,5 @@ export default class CartItemModel {
     }
 }
 
-let cartItems = [
-
-];
+let cartItems = [];
 
