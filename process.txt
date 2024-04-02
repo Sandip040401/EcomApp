@@ -16,3 +16,9 @@ Signin - Email, Password
 
 library:-
 winston logger
+
+
+
+Counter collection
+(_id:"cartItemId", value:0)
+While adding cart items, increament the counter and then use counter value as id to caritem document

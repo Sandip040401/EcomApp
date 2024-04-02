@@ -8,24 +8,6 @@ export default class CartItemModel {
         this.quantity = quantity;
         this.id = id;
     }
-
-
-    static get(userId){
-        return cartItems.filter(
-            (i) => i.userId == userId
-        );
-    }
-
-    static delete(cartItemId, userId) {
-        const cartItemIndex = cartItems.findIndex(
-            (i)=> i.id == cartItemId && i.userId == userId 
-        );
-        if(cartItemIndex == -1){
-            return 'Item not found';
-        } else{
-            cartItems.splice(cartItemIndex,1);
-        }
-    }
 }
 
 let cartItems = [];

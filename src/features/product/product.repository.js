@@ -55,7 +55,7 @@ class ProductRepository{
 
 
     // Filter product
-    async filter(minPrice, maxPrice, category){
+    async filter(minPrice, category){
         try {
             const db = getDB();
             const collection = db.collection(this.collection);
@@ -63,14 +63,17 @@ class ProductRepository{
             if(minPrice){
                 filterExpression.price = {$gte: parseFloat(minPrice)}
             }
-            if(maxPrice){
-                filterExpression.price = {...filterExpression.price, $lte: parseFloat(maxPrice)}
-            }
+            // categories = JSON.parse(categories.replace(/'/g, '"'));
             if(category){
-                filterExpression.category = category
+                filterExpression = {$and:[{category:category}, filterExpression]}
+                // filterExpression = {$or:[{category:category}, filterExpression]}
+                // filterExpression = {$and:[{category:{$in:categories}}, filterExpression]}
+
+                //filterExpression.category = category
             }
 
             return await collection.find(filterExpression).toArray();
+          //  return await collection.find(filterExpression).project({name:1,price:1, _id:0,rating:{$slice:1}}).toArray();
         } catch (err) {
             throw new ApplicationError('Something went wrong with database', 500);
         }
@@ -132,7 +135,24 @@ class ProductRepository{
                 })
         } catch (err) {
             throw new ApplicationError('Something went wrong with database', 500);
-            
+        }
+    }
+
+    async averageProductPricePerCategory(){
+        try {
+            const db =getDB();
+            return await db.collection(this.collection)
+            .aggregate([
+                {
+                    // get average price per category
+                    $group:{
+                        _id:"$category",
+                        averagePrice:{$avg:"$price"}
+                    }
+                }
+            ]).toArray();
+        } catch (err) {
+            throw new ApplicationError('Something went wrong with database', 500);
         }
     }
 }

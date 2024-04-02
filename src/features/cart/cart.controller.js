@@ -14,6 +14,7 @@ export default class CartItemController{
             await this.cartItemsRepository.add(productId, userId, quantity);
             res.status(201).send('Cart is updated');
         } catch (err) {
+            console.log(err);
             return res.status(500).send('Something went wrong');
         }
 

@@ -9,6 +9,7 @@ import productRouter from './src/features/product/product.routes.js';
 import userRouter from './src/features/user/user.routes.js';
 import jwtAuth from './src/middlewares/jwt.middleware.js';
 import cartRouter from './src/features/cart/cart.routes.js';
+import orderRouter from './src/features/order/order.routes.js';
 import loggerMiddleware from './src/middlewares/logger.middleware.js';
 import { ApplicationError } from './src/error-handler/applicationError.js';
 import { connectToMongoDB } from './src/config/mongodb.js';
@@ -56,6 +57,11 @@ server.use("/api/users", userRouter);
 
 // For all requests related to cart, redirect to cart routes
 server.use("/api/cartItems",jwtAuth, cartRouter);
+
+
+// For all requests related to order, redirect to order routes
+server.use("/api/orders",jwtAuth, orderRouter);
+
 
 // Default request handler
 server.get('/', (req,res)=>{
