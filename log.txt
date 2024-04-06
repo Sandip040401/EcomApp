@@ -187,3 +187,4 @@
 {"level":"info","message":"/api/orders - {}","service":"request-logging"}
 {"level":"info","message":"/api/orders - {}","service":"request-logging"}
 {"level":"info","message":"/api/orders - {}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"Sandip\",\"email\":\"sandip@gmail.com\",\"password\":\"hello\"}","service":"request-logging"}
