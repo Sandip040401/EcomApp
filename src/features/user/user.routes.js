@@ -4,6 +4,7 @@
 // Import express
 import express from "express";
 import UserController from "./user.controller.js";
+import jwtAuth from "../../middlewares/jwt.middleware.js";
 
 // Initialize express router
 const userRouter = express.Router();
@@ -17,6 +18,9 @@ userRouter.post('/signin',(req,res) => {
     userController.signIn(req,res)
 });
 
+userRouter.put('/resetPassword',jwtAuth,(req,res) => {
+    userController.resetPassword(req,res)
+})
 
 // export router
 export default userRouter;

@@ -14,6 +14,7 @@ import loggerMiddleware from './src/middlewares/logger.middleware.js';
 import { ApplicationError } from './src/error-handler/applicationError.js';
 import { connectToMongoDB } from './src/config/mongodb.js';
 import { connectUsingMongoose } from './src/config/mongooseConfig.js';
+import likeRouter from './src/features/like/like.routes.js';
 // import basicAuth from './src/middlewares/basicAuth.middleware.js';
 // import bodyParser from 'body-parser';
 
@@ -62,6 +63,9 @@ server.use("/api/cartItems",jwtAuth, cartRouter);
 
 // For all requests related to order, redirect to order routes
 server.use("/api/orders",jwtAuth, orderRouter);
+
+// For all requests related to order, redirect to order routes
+server.use("/api/likes",jwtAuth, likeRouter);
 
 
 // Default request handler

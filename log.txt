@@ -188,3 +188,43 @@
 {"level":"info","message":"/api/orders - {}","service":"request-logging"}
 {"level":"info","message":"/api/orders - {}","service":"request-logging"}
 {"level":"info","message":"/api/users/signup - {\"name\":\"Sandip\",\"email\":\"sandip@gmail.com\",\"password\":\"hello\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword - {\"newPassword\":\"sandip\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword - {\"newPassword\":\"sandip\"}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate - {\"productID\":\"660447d5114d5b080a6cc304\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate - {\"productID\":\"660447d5114d5b080a6cc304\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate - {\"productID\":\"660447d5114d5b080a6cc304\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate - {\"productID\":\"660447d5114d5b080a6cc304\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate - {\"productID\":\"660447d5114d5b080a6cc304\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate - {\"productId\":\"660447d5114d5b080a6cc304\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate - {\"productId\":\"660447d5114d5b080a6cc304\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate - {\"productId\":\"660447d5114d5b080a6cc304\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Amazon Kindle\",\"price\":150000,\"description\":\"E-book reader by Amazon\",\"categories\":\"6612c6c923ca57b6b74a24bb,6612c6c923ca57b6b74a24bd\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Amazon Kindle\",\"price\":150000,\"description\":\"E-book reader by Amazon\",\"categories\":\"6612c6c923ca57b6b74a24bb,6612c6c923ca57b6b74a24bd\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Amazon Kindle\",\"price\":150000,\"description\":\"E-book reader by Amazon\",\"categories\":\"6612c6c923ca57b6b74a24bb,6612c6c923ca57b6b74a24bd\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Amazon Kindle\",\"price\":150000,\"description\":\"E-book reader by Amazon\",\"categories\":\"6612c6c923ca57b6b74a24bb,6612c6c923ca57b6b74a24bd\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Amazon Kindle\",\"price\":150000,\"description\":\"E-book reader by Amazon\",\"categories\":\"6612c6c923ca57b6b74a24bb,6612c6c923ca57b6b74a24bd\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes - {\"type\":\"product\",\"id\":\"6612d7baf8ff24bb3fbdb285\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes - {\"type\":\"Product\",\"id\":\"6612d7baf8ff24bb3fbdb285\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes - {\"type\":\"Product\",\"id\":\"6612d7baf8ff24bb3fbdb285\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes - {\"type\":\"Product\",\"id\":\"6612d7baf8ff24bb3fbdb285\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=6612d7baf8ff24bb3fbdb285&type=Product - {}","service":"request-logging"}
+{"level":"info","message":"/api/likes - {\"type\":\"Product\",\"id\":\"660447d5114d5b080a6cc304\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes - {\"type\":\"Product\",\"id\":\"660447d5114d5b080a6cc304\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=660447d5114d5b080a6cc304&type=Product - {}","service":"request-logging"}
